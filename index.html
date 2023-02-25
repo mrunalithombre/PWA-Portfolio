@@ -23,7 +23,7 @@
 				<div class="navbar-nav">
 					<a href="#tech" class="nav-link">Tech</a>
 					<a href="#case-study" class="nav-link">Case Study</a>
-					<a href="#screenshots" class="nav-link">Screenshots</a>
+					<a href="#screenshot" class="nav-link">Screenshots</a>
 					<a href="#auther" class="nav-link">Author</a>
 				</div>
 				<div class="ms-auto">
@@ -139,9 +139,9 @@
 	<div class="container" id="screenshot">
 		<h1 id="screenshot">Screenshots</h1>
 		<div class="d-flex gap-5 flex-wrap">
-			<img class="img-fluid" src="" alt="">
-			<img class="img-fluid" src="" alt="">
-			<img class="img-fluid" src="" alt="">
+			<img class="img-fluid" src="assets/images/start.png" alt="">
+			<img class="img-fluid" src="assets/images/camera on.png" alt="">
+			<img class="img-fluid" src="assets/images/capture.png" alt="">
 		</div>
 	</div>
 	<!-- screenshot end -->
@@ -246,6 +246,14 @@
 	<!-- Author end -->
 
 	<script type="module" src="./assets/js/app.js"></script>
+
+	<script>
+		if (navigator.serviceWorker) {
+			window.addEventListener("load", () => {
+				navigator.serviceWorker.register("./sw.js")
+			})
+		}
+	</script>
 
 	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
 		integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
